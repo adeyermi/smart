@@ -1,7 +1,7 @@
 const express = require ('express');
 const dotenv = require ('dotenv');
-const authRoutes = require("./routes/authRoutes");
-const sendVerificationEmail = require ("./utils/emailService");
+const authRoutes = require("./routes/auth");
+// const sendVerificationEmail = require ("./utils/emailService");
 const connectDB = require('./config/db');
 dotenv.config();
 const app = express();
