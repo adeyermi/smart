@@ -15,4 +15,13 @@ const generateTrc20Wallet = async () => {
   };
 };
 
-module.exports = generateTrc20Wallet;
+// Run and print the generated wallet
+(async () => {
+  try {
+    const wallet = await generateTrc20Wallet();
+    console.log("Generated TRC20 Wallet:");
+    console.log(wallet);
+  } catch (error) {
+    console.error("Error generating TRC20 wallet:", error);
+  }
+})();

@@ -5,6 +5,8 @@ const { authenticate } = require('../middleware/authMiddleware');
 const { checkProfileComplete } = require('../middleware/profileMiddleware');
 const walletController = require('../controllers/walletController');
 
+
+
 // Route to get wallet details
 router.get('/', authenticate, walletController.getWallet);
 

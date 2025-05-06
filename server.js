@@ -6,6 +6,7 @@ const walletRoutes = require('./routes/walletRoutes');
 const profileRoutes = require('./routes/profileRoutes');
 const adminRoutes = require('./routes/adminRoutes')
 const userRoutes = require('./routes/userRoutes');
+const testRoutes = require('./routes/testRoutes');
 dotenv.config();
 
 const app = express(); // FIXED: use 'app' instead of 'myapp'
@@ -21,7 +22,7 @@ app.use('/api/wallet', walletRoutes);
 app.use('/api/profile', profileRoutes);
 app.use('/api/user', userRoutes);
 app.use('/api/admin', adminRoutes);
-
+app.use('/api/test', testRoutes);
 
 const PORT = process.env.PORT || 5000;
 
